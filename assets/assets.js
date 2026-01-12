@@ -29,6 +29,7 @@ import resty from "./resty.png";
 import munchi from "./munchi.png";
 import portfolio from "./portfolio.png";
 import flower_house from "./flower_house.png";
+import jobmein from "./jobmein.png";
 
 export const assets = {
   logo,
@@ -62,6 +63,7 @@ export const assets = {
   open_white,
   portfolio,
   flower_house,
+  jobmein,
 };
 
 export const info = [
@@ -229,7 +231,7 @@ export const projects = [
     title: "JobMeIn",
     description:
       "Tinder-like app for a discrimination-free job search experience",
-    image: resty,
+    image: jobmein,
     tech: [react_native, typescript, figma, node, expo],
     link: "https://github.com/iaroslavagoncharova/JobMeIn",
     linkType: "github",
