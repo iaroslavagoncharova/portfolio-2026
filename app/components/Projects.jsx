@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <motion.div
       id="projects"
-      className="w-full px-[12%] py-16 scroll-mt-20"
+      className="w-full px-[12%] lg:py-10 scroll-mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
