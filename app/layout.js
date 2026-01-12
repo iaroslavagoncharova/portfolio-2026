@@ -14,7 +14,7 @@ const InterFont = Inter({
 });
 
 export const metadata = {
-  title: "Portfolio - Iaroslava Goncharova",
+  title: "Iaroslava Goncharova",
   description: "",
 };
 
