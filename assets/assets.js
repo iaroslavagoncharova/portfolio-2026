@@ -208,15 +208,6 @@ export const projects = [
     linkType: "external",
   },
   {
-    title: "JobMeIn",
-    description:
-      "Tinder-like app for a discrimination-free job search experience",
-    image: resty,
-    tech: [react_native, typescript, figma, node, expo],
-    link: "https://github.com/iaroslavagoncharova/JobMeIn",
-    linkType: "github",
-  },
-  {
     title: "Flower House",
     description:
       "E-commerce mobile app for a flower shop with payment integration and confirmation emails",
@@ -232,6 +223,15 @@ export const projects = [
     image: portfolio,
     tech: [nextjs, javascript, figma],
     link: "https://github.com/iaroslavagoncharova/portfolio-2026",
+    linkType: "github",
+  },
+  {
+    title: "JobMeIn",
+    description:
+      "Tinder-like app for a discrimination-free job search experience",
+    image: resty,
+    tech: [react_native, typescript, figma, node, expo],
+    link: "https://github.com/iaroslavagoncharova/JobMeIn",
     linkType: "github",
   },
 ];
