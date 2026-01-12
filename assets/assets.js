@@ -1,6 +1,4 @@
 import logo from "./portfolio-logo.png";
-import eng from "./eng.png";
-import fi from "./fi.png";
 import profile_photo from "./profile-photo.jpg";
 import blender from "./blender.svg";
 import bluetooth from "./bluetooth.svg";
@@ -34,8 +32,6 @@ import flower_house from "./flower_house.png";
 
 export const assets = {
   logo,
-  eng,
-  fi,
   profile_photo,
   blender,
   bluetooth,
