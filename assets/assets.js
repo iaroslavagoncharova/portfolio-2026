@@ -29,7 +29,7 @@ import resty from "./resty.png";
 import munchi from "./munchi.png";
 import portfolio from "./portfolio.png";
 import flower_house from "./flower_house.png";
-import jobmein from "./jobmein.png";
+import jobmein from "./jobmein.jpg";
 
 export const assets = {
   logo,
