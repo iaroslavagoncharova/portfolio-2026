@@ -4,6 +4,26 @@ import React from "react";
 import { motion } from "motion/react";
 
 const Projects = () => {
+  const buttonText = (type) => {
+    switch (type) {
+      case "github":
+        return "GitHub";
+      case "external":
+        return "Check out";
+      default:
+        return "Coming soon";
+    }
+  };
+  const buttonIcon = (type) => {
+    switch (type) {
+      case "github":
+        return assets.open;
+      case "external":
+        return assets.open_white;
+      default:
+        return null;
+    }
+  };
   return (
     <motion.div
       id="projects"
@@ -70,6 +90,9 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (!project.linkType) e.preventDefault();
+                }}
                 className={`
                   inline-flex items-center gap-3 px-5 py-2.5 rounded-full ${
                     project.linkType === "external"
@@ -78,16 +101,14 @@ const Projects = () => {
                   } font-nunito 0 shadow-[0_6px_16px_rgba(0,0,0,0.25)] transition-all duration-300 ease-out hover:shadow-[0_10px_26px_rgba(0,0,0,0.35)] self-center focus:outline-none focus:ring-2 focus:ring-(--accent)/30
                 `}
               >
-                {project.linkType === "github" ? "GitHub" : "Check out"}
-                <Image
-                  src={
-                    project.linkType === "github"
-                      ? assets.open
-                      : assets.open_white
-                  }
-                  alt="open link"
-                  className="w-4 h-4"
-                />
+                {buttonText(project.linkType)}
+                {project.linkType && (
+                  <Image
+                    src={buttonIcon(project.linkType)}
+                    alt="open link"
+                    className="w-4 h-4"
+                  />
+                )}
               </a>
             </div>
           </motion.div>

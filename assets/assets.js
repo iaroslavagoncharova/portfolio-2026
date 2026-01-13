@@ -209,7 +209,7 @@ export const projects = [
     image: resty,
     tech: [react_native, typescript, firebase, stripe, figma, node, expo],
     link: "",
-    linkType: "external",
+    linkType: "",
   },
   {
     title: "Flower House",
