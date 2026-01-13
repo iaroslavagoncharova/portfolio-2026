@@ -30,6 +30,7 @@ import munchi from "./munchi.png";
 import portfolio from "./portfolio.png";
 import flower_house from "./flower_house.png";
 import jobmein from "./jobmein.jpg";
+import download from "./download.svg";
 
 export const assets = {
   logo,
@@ -64,6 +65,7 @@ export const assets = {
   portfolio,
   flower_house,
   jobmein,
+  download,
 };
 
 export const info = [
